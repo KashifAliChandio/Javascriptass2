@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/bootstrap-theme.min.css">
+    
+     <link rel="stylesheet" href="../css1/custom.css">
+
+</head>
+<body>
+<div class="container container1">
+<div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 col-xm-12">
+        <a href="#" class="thumbnail responsive">
+            <img src="../img/js.png" alt="JS img">
+        </a>
+    </div>
+ 
+</div>
+   <div class="row">
+       <a href="../index.html"> <p class="btn btn-primary">Home </p> </a>
+    </div>
+    
+     <script > 
+        var col =["red", "green", "blue"];
+        document.write(col + "<br>");
+col.unshift(prompt(" Input the color"));
+document.write("Updated color " +col);
+
+col.push(prompt("Input the color"));
+document.write("<br> updated color in the end "+col);
+
+col.splice(1 , 0,prompt("Input the color"),prompt("Color"));
+document.write("<br>"+col);
+col.splice(0,1)
+document.write("<br>"+col);
+col.pop()
+document.write("<br>"+col);
+
+col.splice(+prompt("Enter the state you want to add color"),+prompt("Enter color position"), prompt("Enter color"))
+document.write(col);
+col.splice(+prompt("Enter the index you want to delete color"),+prompt("Enter color positions You want tp delete"))
+ 
+ document.write(col)
+    </script>
+
+
+</div>
+</body>
+
+</html>
